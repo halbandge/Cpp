@@ -212,3 +212,38 @@ Here are the basic logical operators and their usage:
 ```cpp
 (!(a > 5)) // returns 1 if (a > 5) results to False, returns 0(false) if (a > 5) results to True
 ```
+
+## Operator Precedence and Associativity
+
+You may be familiar with BODMAS (or PEMDAS in some regions) rule for evaluating arithmetic expressions. It says we solve parenthesis first, then divide, then multiply, then add and then subtract. Similarly there are two main rules a program follows to evaluate an arithmetic expression:
+
+- Precedence - It tells the priority of operations.
+- Associativity - It tells what order the operations with the same priority will be performed in.
+
+## Operator Precedence 
+
+Operator precedence means that some operations are done before others when evaluating an expression. Operators with higher precedence are evaluated before those with lower precedence. This concept is similar to the rules of arithmetic, where multiplication and division takes precedence over addition and subtraction.
+
+Here's the order of operator precedence in C++ from highest to lowest:
+
+- Parentheses: ()
+- Postfix operators: ++, --
+- Unary operators: +, -, !, ~, ++, --, (type)
+- Multiplicative operators: *, /, %
+- Additive operators: +, -
+- Relational operators: <, >, <=, >=
+- Equality operators: ==, !=
+- Logical AND operator: &&
+- Logical OR operator: ||
+- Assignment operators: =, +=, -= ... and so on
+
+## Associativity
+
+When an expression contains operators of the same precedence level, associativity determines their order of evaluation.
+
+- Left-Associative: Operators are evaluated from left to right. For instance, in a + b - c, addition and subtraction, being left-associative, will first evaluate a + b, and then subtract c from the result.
+
+- Right-Associative: Although less common in C++, some operators are right-associative, meaning they are evaluated from right to left. An example is the assignment operator =.
+In a = b = c, c is assigned to b, and then the resulting value of b is assigned to a.
+
+Understanding these principles is crucial for correctly interpreting and writing C++ programming expressions.
