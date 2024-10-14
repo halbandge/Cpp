@@ -44,3 +44,34 @@ do {
 }
 while (condition); // The loop continues to iterate as long as the condition is true.
 ```
+
+## For Loop 
+
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+
+Syntax:
+
+```cpp
+for (statement 1; statement 2; statement 3) {
+      // code block to be executed
+    }
+    // Statement 1 is executed (one time) before the execution of the code block.
+    // Statement 2 defines the condition for executing the code block.
+    // Statement 3 is executed (every time) after the code block has been executed.
+```
+
+Example:
+
+```cpp
+for (int i = 0; i < 5; i++) {
+       cout << i << endl;
+}
+```
+
+The for loop in code above does the following:
+
+- It initializes the loop control variable i to 0.
+- Before each iteration of the loop, condition (i < 5) is checked.
+- Lastly, the loop control variable i is incremented by 1.
+
+The output will be numbers starting from 0 to 4 (each on a new line).
